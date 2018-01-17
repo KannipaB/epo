@@ -1,6 +1,109 @@
-.epo-search {
-  background-color: #1b1e21;
-  img {
+.epo-section-top {
+    background-color: #F6F6F6;
+}
 
-  }
+.epo-search {
+    &__def {
+        background-image: url("../images/epo-search-bg.jpg");
+        background-color: #092751;
+        width: 100%;
+        height: 355px;
+        padding: 15px;
+        h4 {
+            color: #fff;
+            font-weight: 300;
+        }
+    }
+    .form-control {
+        border: none;
+        border-radius: 0;
+        height: 3rem !important;
+        color: #8D8E96;
+        -webkit-appearance: none;
+        &::placeholder {
+            font-weight: 200;
+            font-style: italic;
+        }
+    }
+    select {
+        font-weight: 200;
+        font-style: italic;
+    }
+    &__btn {
+        float: right;
+        padding: .5rem 3rem;
+        color: #fff;
+        background-color: $epo-btn;
+        font-size: 1.2rem;
+        border: none;
+        font-weight: lighter;
+    }
+    &__qty {
+        clear: both;
+        padding: 1rem;
+        text-align: center;
+        background: rgba(0, 0, 0, .6);
+        h2, p {
+            color: #fff;
+            font-weight: lighter;
+        }
+        &--project {
+            border-right: 1px solid #ccc;
+        }
+    }
+    &__tab {
+        width: 100%;
+        -webkit-box-shadow: 0 8px 6px -6px #bbb;
+        -moz-box-shadow: 0 8px 6px -6px #bbb;
+        box-shadow: 0 8px 6px -6px #bbb;
+        li {
+            width: 50%;
+            text-align: center;
+            &:first-child {
+                border-right: 1px solid #DEE2E6;
+            }
+            a {
+                color: $sub-text;
+            }
+        }
+    }
+}
+
+.epo-whyus {
+    h2 {
+        color: $main-menu;
+    }
+    i {
+        font-size: 2rem;
+        color: $epo-btn;
+    }
+    h4 {
+        color: $epo-btn;
+    }
+    p {
+        color: $main-text;
+        line-height: 1.2;
+    }
+}
+
+.epo-pin {
+    h2 {
+        color: $main-menu;
+    }
+    &__title {
+        background-color: $main-blue;
+        padding: .8rem;
+        color: #fff;
+        font-weight: lighter;
+    }
+}
+
+.epo-section-project {
+    background-color: #fff;
+}
+
+.epo-latest {
+    -moz-box-shadow-bottom: 4px 4px 4px black;
+    -webkit-box-shadow-bottom: 4px 4px 4px black;
+    box-shadow-bottom: 4px 4px 4px black;
 }

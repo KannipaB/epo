@@ -1,64 +1,164 @@
 <!doctype html>
 <html class="no-js" lang="">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>epo-index</title>
-
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="styles/main.scss">
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-</head>
-
-<body>
-  <div class="container">
-      <section class="row">
-
-          <div class="col-md-6 col-xs-12">
-              <div class="epo-search">
-                <img class="img-fluid" src="images/epo-search-bg.jpg">
-              </div>
-              <div class="epo-whyus"></div>
-          </div>
-
-          <div class="col-md-6 col-xs-12">
-              <div class="epo-carousel">
-                <div id="carousel-banner" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-banner" data-slide-to="1"></li>
-                  </ol>
-                  <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                      <img class="d-block img-fluid" src="images/epo-search-bg.jpg" alt="First slide">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>epo-index</title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="styles/main.css" type="text/css">
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <section class="epo-section-top pt-4 pb-4">
+            <div class="container">
+                <!-- first section -->
+                <div class="row">
+                    <!--search box-->
+                    <div class="col-md-6 col-12">
+                        <div class="epo-search">
+                            <div class="tab-content">
+                                <div class="tab-pane active epo-search__def" id="src-def" role="tabpanel">
+                                    <h4>ค้นหาบ้านและคอนโด ในราคาถูกที่สุด</h4>
+                                    <form class="pt-1">
+                                        <div class="form-group">
+                                            <input type="search" class="form-control" id="search"
+                                                placeholder="ค้นหาโครงการ, ยูนิตหรือทำเลที่ต้องการ">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <select class="form-control custom-select">
+                                                        <option>บ้าน</option>
+                                                        <option>คอนโดมิเนียม</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <select class="form-control custom-select">
+                                                        <option>ราคาจากต่ำ-สูง</option>
+                                                        <option>มาใหม่</option>
+                                                        <option>ความนิยม</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="epo-search__btn mb-3">ค้นหา</button>
+                                    </form>
+                                    <div class="epo-search__qty d-none d-md-block">
+                                        <div class="row">
+                                            <div class="col-md-6 epo-search__qty--project">
+                                                <h2 class="mb-0">390</h2>
+                                                <p class="mt-0 mb-0">โครงการ</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h2 class="mb-0">1,390</h2>
+                                                <p class="mt-0 mb-0">ยูนิต</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="src-map" role="tabpanel">
+                                    map gonna place here
+                                </div>
+                                <ul class="epo-search__tab nav nav-tabs" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" href="#src-def"
+                                        data-toggle="tab">ค้นหา</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#src-map"
+                                        data-toggle="tab">ค้นหาด้วยแผนที่</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                      <img class="d-block img-fluid" src="images/epo-search-bg.jpg" alt="Second slide">
+                    <!--carousel advertising-->
+                    <div class="col-md-6 col-12">
+                        <div class="epo-carousel">
+                            <div id="carousel-banner" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-banner" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" src="images/ad-banner.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="images/ad-banner.png" alt="Second slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-banner" role="button"
+                                    data-slide="prev"> <span class="carousel-control-prev-icon"
+                                    aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a
+                                class="carousel-control-next" href="#carousel-banner" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                                class="sr-only">Next</span> </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carousel-banner" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carousel-banner" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
                 </div>
-              </div>
-              <div class="epo-pinproject"></div>
-          </div>
-      </section>
-
-      <div class="footer"></div>
-  </div>
-
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="scripts/main.js"></script>
-</body>
-
+                <!-- second section -->
+                <div class="row">
+                    <!--whyus-->
+                    <div class="col-md-6 col-12">
+                        <div class="epo-whyus">
+                            <h2 class="pt-4 pb-3">ทำไมต้องเลือกเรา</h2>
+                            <div class="row">
+                                <div class="col-1"><i class="fa fa-bookmark" aria-hidden="true"></i></div>
+                                <div class="col-11">
+                                    <h4>100% refund if you find cheaper.</h4>
+                                    <p>100% refund if the project is cheaper. The property sold on our website is guaranteed to be the cheapest, even if the owner himself can not sell it.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><i class="fa fa-gift" aria-hidden="true"></i></div>
+                                <div class="col-11">
+                                    <h4>Our room is the cheapest.</h4>
+                                    <p>Our room is the cheapest. Our room is the cheapest. Our room is the cheapest. Our room is the cheapest. Our room is the cheapest.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--pin project-->
+                    <div class="col-md-6 col-12">
+                        <div class="epo-pin">
+                            <h2 class="pb-1">โครงการแนะนำ</h2>
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <img class="d-block img-fluid" src="images/ad-banner.png">
+                                    <div
+                                        class="epo-pin__title">DEO Mobi Sukhumvit 40 ใหม่ล่าสุดใกล้รถไฟฟ้า BTS เอกมัย Fully Furnished เริ่ม 5.79 ล้าน
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <img class="d-block img-fluid" src="images/ad-banner.png">
+                                    <div
+                                        class="epo-pin__title">DEO Mobi Sukhumvit 40 ใหม่ล่าสุดใกล้รถไฟฟ้า BTS เอกมัย Fully Furnished เริ่ม 5.79 ล้าน
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="epo-section-project pt-4 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="epo-latest">
+                            <img class="d-block img-fluid" src="images/ad-banner.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer"></footer>
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
 </html>

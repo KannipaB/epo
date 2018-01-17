@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:200,300,300i,400&subset=thai');
+
 body {
-    background-color: #F6F6F6;
+    background-color: #000;
+    font-family: 'Kanit', sans-serif !important;
 }
 
+$epo-btn: #D60A25;
+$hover-link: $epo-btn;
+$main-menu: #9D1D23;
+$main-text: #616161;
+$sub-text: #8E8E8E;
+$main-blue: #092751;
+
 @import "index";
+@import "bs-overiding";
