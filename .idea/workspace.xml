@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd029172-242b-466b-99a2-09a2f5b76cef" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/images/epo-search-bg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/styles/_index.scss" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
-    </list>
+    <list default="true" id="dd029172-242b-466b-99a2-09a2f5b76cef" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -201,12 +194,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516096943385</updated>
       <workItem from="1516096945606" duration="509000" />
-      <workItem from="1516097469800" duration="2714000" />
+      <workItem from="1516097469800" duration="2799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3223000" />
+    <option name="totallyTimeSpent" value="3308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1270" height="756" extended-state="0" />
