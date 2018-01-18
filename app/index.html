@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>epo-index</title>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="styles/main.css" type="text/css">
+        <link rel="stylesheet" href="styles/css/main.css" type="text/css">
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
         <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -14,8 +14,10 @@
     <body>
         <section class="epo-section-top pt-4 pb-4">
             <div class="container">
+
                 <!-- first section -->
                 <div class="row">
+
                     <!--search box-->
                     <div class="col-md-6 col-12">
                         <div class="epo-search">
@@ -24,11 +26,10 @@
                                     <h4>ค้นหาบ้านและคอนโด ในราคาถูกที่สุด</h4>
                                     <form class="pt-1">
                                         <div class="form-group">
-                                            <input type="search" class="form-control" id="search"
-                                                placeholder="ค้นหาโครงการ, ยูนิตหรือทำเลที่ต้องการ">
+                                            <input type="search" class="form-control" id="search" placeholder="ค้นหาโครงการ, ยูนิตหรือทำเลที่ต้องการ">
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="form-group">
                                                     <select class="form-control custom-select">
                                                         <option>บ้าน</option>
@@ -36,7 +37,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
+                                            <div class="col-md-6 col-sm-12">
                                                 <div class="form-group">
                                                     <select class="form-control custom-select">
                                                         <option>ราคาจากต่ำ-สูง</option>
@@ -48,7 +49,7 @@
                                         </div>
                                         <button class="epo-search__btn mb-3">ค้นหา</button>
                                     </form>
-                                    <div class="epo-search__qty d-none d-md-block">
+                                    <div class="epo-search__qty">
                                         <div class="row">
                                             <div class="col-md-6 epo-search__qty--project">
                                                 <h2 class="mb-0">390</h2>
@@ -61,18 +62,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="src-map" role="tabpanel">
-                                    map gonna place here
-                                </div>
+                                <div class="tab-pane" id="src-map" role="tabpanel">map gonna place here</div>
                                 <ul class="epo-search__tab nav nav-tabs" role="tablist">
-                                    <li class="nav-item"><a class="nav-link active" href="#src-def"
-                                        data-toggle="tab">ค้นหา</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#src-map"
-                                        data-toggle="tab">ค้นหาด้วยแผนที่</a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#src-def" data-toggle="tab">ค้นหา</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#src-map" data-toggle="tab">
+                                            ค้นหาด้วยแผนที่
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                     <!--carousel advertising-->
                     <div class="col-md-6 col-12">
                         <div class="epo-carousel">
@@ -89,73 +93,186 @@
                                         <img class="d-block img-fluid" src="images/ad-banner.png" alt="Second slide">
                                     </div>
                                 </div>
-                                <a class="carousel-control-prev" href="#carousel-banner" role="button"
-                                    data-slide="prev"> <span class="carousel-control-prev-icon"
-                                    aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a
-                                class="carousel-control-next" href="#carousel-banner" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span> <span
-                                class="sr-only">Next</span> </a>
+                                <a class="carousel-control-prev" href="#carousel-banner" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-banner" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
                 <!-- second section -->
                 <div class="row">
+
                     <!--whyus-->
                     <div class="col-md-6 col-12">
                         <div class="epo-whyus">
                             <h2 class="pt-4 pb-3">ทำไมต้องเลือกเรา</h2>
                             <div class="row">
-                                <div class="col-1"><i class="fa fa-bookmark" aria-hidden="true"></i></div>
-                                <div class="col-11">
+                                <div class="col-2 col-md-1"><i class="fa fa-bookmark" aria-hidden="true"></i></div>
+                                <div class="col-10 col-md-11">
                                     <h4>100% refund if you find cheaper.</h4>
                                     <p>100% refund if the project is cheaper. The property sold on our website is guaranteed to be the cheapest, even if the owner himself can not sell it.</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-1"><i class="fa fa-gift" aria-hidden="true"></i></div>
-                                <div class="col-11">
+                                <div class="col-2 col-md-1"><i class="fa fa-gift" aria-hidden="true"></i></div>
+                                <div class="col-10 col-md-11">
                                     <h4>Our room is the cheapest.</h4>
                                     <p>Our room is the cheapest. Our room is the cheapest. Our room is the cheapest. Our room is the cheapest. Our room is the cheapest.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!--pin project-->
-                    <div class="col-md-6 col-12">
-                        <div class="epo-pin">
-                            <h2 class="pb-1">โครงการแนะนำ</h2>
-                            <div class="row">
-                                <div class="col-md-6 col-12">
-                                    <img class="d-block img-fluid" src="images/ad-banner.png">
-                                    <div
-                                        class="epo-pin__title">DEO Mobi Sukhumvit 40 ใหม่ล่าสุดใกล้รถไฟฟ้า BTS เอกมัย Fully Furnished เริ่ม 5.79 ล้าน
-                                    </div>
+                    <div class="col-md-6 col-12 epo-pin">
+                        <h2 class="pb-1">โครงการแนะนำ</h2>
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="epo-pin__content">
+                                    <a href="#">
+                                        <img class="d-block img-fluid" src="images/cd-bkk.jpg">
+                                        <div class="epo-pin__title">DEO Mobi Sukhumvit 40 ใหม่ล่าสุดใกล้รถไฟฟ้า BTS เอกมัย Fully Furnished เริ่ม 5.79 ล้าน</div>
+                                    </a>
                                 </div>
-                                <div class="col-md-6 col-12">
-                                    <img class="d-block img-fluid" src="images/ad-banner.png">
-                                    <div
-                                        class="epo-pin__title">DEO Mobi Sukhumvit 40 ใหม่ล่าสุดใกล้รถไฟฟ้า BTS เอกมัย Fully Furnished เริ่ม 5.79 ล้าน
-                                    </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="epo-pin__content">
+                                    <a href="#">
+                                        <img class="d-block img-fluid" src="images/cd-bkk.jpg">
+                                        <div class="epo-pin__title">DEO Mobi Sukhumvit 40 ใหม่ล่าสุดใกล้รถไฟฟ้า BTS เอกมัย Fully Furnished เริ่ม 5.79 ล้าน</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
+
         <section class="epo-section-project pt-4 pb-4">
             <div class="container">
+                <!--latest project-->
+                <h2>โครงการล่าสุด</h2>
                 <div class="row">
-                    <div class="col-md-4 col-12">
-                        <div class="epo-latest">
-                            <img class="d-block img-fluid" src="images/ad-banner.png">
-                        </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <a href="#">
+                            <div class="epo-latest">
+                                <img class="d-block img-fluid" src="images/cd-bkk.jpg">
+                                <div class="epo-latest__price">เริ่มต้น : ฿5,000,000</div>
+                                <div class="epo-latest__location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    BTS, Ari BANGKOK
+                                </div>
+                                <div class="epo-latest__star"></div>
+                                <div class="epo-latest__title">
+                                    <h4>ไอดีโอ พหลโยธิน-จตุจักร</h4>
+                                    <p>SHIFT YOUR DIMENSION IDEO HYBRID SERIES</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <a href="#">
+                            <div class="epo-latest">
+                                <img class="d-block img-fluid" src="images/cd-bkk.jpg">
+                                <div class="epo-latest__price">เริ่มต้น : ฿5,000,000</div>
+                                <div class="epo-latest__location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    BTS, Ari BANGKOK
+                                </div>
+                                <div class="epo-latest__star"></div>
+                                <div class="epo-latest__title">
+                                    <h4>ไอดีโอ พหลโยธิน-จตุจักร</h4>
+                                    <p>SHIFT YOUR DIMENSION IDEO HYBRID SERIES</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <a href="#">
+                            <div class="epo-latest">
+                                <img class="d-block img-fluid" src="images/cd-bkk.jpg">
+                                <div class="epo-latest__price">เริ่มต้น : ฿5,000,000</div>
+                                <div class="epo-latest__location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    BTS, Ari BANGKOK
+                                </div>
+                                <div class="epo-latest__star"></div>
+                                <div class="epo-latest__title">
+                                    <h4>ไอดีโอ พหลโยธิน-จตุจักร</h4>
+                                    <p>SHIFT YOUR DIMENSION IDEO HYBRID SERIES</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <a href="#">
+                            <div class="epo-latest">
+                                <img class="d-block img-fluid" src="images/cd-bkk.jpg">
+                                <div class="epo-latest__price">เริ่มต้น : ฿5,000,000</div>
+                                <div class="epo-latest__location">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    BTS, Ari BANGKOK
+                                </div>
+                                <div class="epo-latest__star"></div>
+                                <div class="epo-latest__title">
+                                    <h4>ไอดีโอ พหลโยธิน-จตุจักร</h4>
+                                    <p>SHIFT YOUR DIMENSION IDEO HYBRID SERIES</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
+
+                <!--all projects button-->
+                <a href="#" class="epo-section-project__btn">ดูทุกโครงการ</a>
             </div>
         </section>
-        <footer class="footer"></footer>
+
+        <footer class="footer">
+            <section class="footer__desc container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>PROPERTY OUTLET (อีพร็อพเพอร์ตี้ เอาท์เล็ท)</h5>
+                        <p>Thailand's # 1 property website comes with many special room rates. E PROPERTY OUTLET There are both Townhouse and Townhouse, near BTS Skytrain near the MRT and close to important places such as near the school near the university. Near the shopping mall The special price is only here. Our guarantee is the cheapest.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>SITE MAP</h5>
+                        <a href="#">Home</a>
+                        <a href="#">Projects</a>
+                        <a href="#">PR News</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>CONTACT US</h5>
+                        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> epropertyoutlet@epropertyoutlet.com</a>
+                        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> epropertyoutletFB</a>
+                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> epropertyoutletME</a>
+                        <a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i> Line@epropertyoutlet</a>
+                        <a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i> 097-2017-016</a>
+                    </div>
+                </div>
+            </section>
+            <section class="footer__licence">
+                <div class="container">
+                    <p>© 2017, E PROPERTY OUTLET, All Rights Reserved.</p>
+                </div>
+            </section>
+        </footer>
+
         <script src="/bower_components/modernizr/modernizr.js"></script>
         <script src="/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>

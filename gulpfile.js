@@ -22,7 +22,7 @@ gulp.task('styles', () => {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.if(dev, $.sourcemaps.write()))
-    .pipe(gulp.dest('app/styles'))
+    .pipe(gulp.dest('app/styles/css'))
     .pipe(reload({stream: true}));
 });
 

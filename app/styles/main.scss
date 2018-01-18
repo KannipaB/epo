@@ -1,16 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:200,300,300i,400&subset=thai');
 
-body {
-    background-color: #000;
-    font-family: 'Kanit', sans-serif !important;
-}
-
 $epo-btn: #D60A25;
 $hover-link: $epo-btn;
 $main-menu: #9D1D23;
 $main-text: #616161;
 $sub-text: #8E8E8E;
 $main-blue: #092751;
+$main-green: #00CD3C;
+
+body {
+    background-color: #000;
+    font-family: 'Kanit', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none !important;
+        cursor: pointer;
+        transition-delay: .2s;
+    }
+}
+
+.epo-btn {
+    color: #fff;
+    background-color: #D60A25;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: lighter;
+    &:hover {
+        cursor: pointer;
+        color: $main-blue;
+        transition-delay: .2s;
+    }
+}
 
 @import "index";
+@import "projects";
 @import "bs-overiding";
+@import "footer";

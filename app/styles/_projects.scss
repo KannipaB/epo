@@ -1,0 +1,184 @@
+.epo-projects {
+    position: relative;
+    background-color: #F6F6F6;
+    padding-top: 3rem;
+    h2 {
+        color: $main-menu;
+    }
+}
+
+.epo-projects-search {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 75%;
+    &__def {
+        padding: 1rem;
+        background-color: #424242;
+        overflow: auto;
+    }
+    h4 {
+        color: #fff;
+        font-weight: 300;
+    }
+    .form-control {
+        border: none;
+        border-radius: 0;
+        height: 3rem !important;
+        color: #8D8E96;
+        -webkit-appearance: none;
+        &::placeholder {
+            font-weight: 200;
+            font-style: italic;
+        }
+    }
+    select {
+        font-weight: 200;
+        font-style: italic;
+    }
+    button {
+        width: 100%;
+        padding: .5rem 3rem;
+        @extend .epo-btn;
+    }
+    &__map {
+        background-image: url("../../images/map-bg.png");
+        background-color: #092751;
+        width: 100%;
+        height: 200px;
+        margin-top: 1rem;
+        text-align: center;
+        padding: 2rem;
+        a {
+            color: rgba(255, 255, 255, 1);
+            font-size: 2rem;
+            &:hover {
+                color: $hover-link;
+            }
+        }
+    }
+}
+
+.epo-projects-cont {
+    padding: 1rem 3rem !important;
+}
+
+.epo-project {
+    margin-bottom: 2rem;
+    -moz-box-shadow: 2px 2px 6px 1px #ccc;
+    -webkit-box-shadow: 2px 2px 6px 1px #ccc;
+    box-shadow: 2px 2px 6px 1px #ccc;
+    transition-delay: .1s;
+    &__img {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    &__desc {
+        background-color: #fff;
+        position: relative;
+        &--tag {
+            font-size: 14px;
+            font-weight: lighter;
+            color: deepskyblue;
+            margin-bottom: 0;
+        }
+        &--title {
+            font-size: 1.5rem;
+            color: #222;
+            &:hover {
+                color: $main-menu;
+            }
+        }
+        &--sub {
+            color: $sub-text;
+            line-height: 1.2;
+            font-weight: lighter;
+        }
+        &--location {
+            position: absolute;
+            bottom: 10px;
+            color: $sub-text;
+            a {
+                color: $epo-btn;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__data {
+        text-align: center;
+        position: relative;
+        &--star {
+
+        }
+        &--pt, &--ry {
+            color: $sub-text;
+            span {
+                color: #000;
+            }
+        }
+        &--started {
+            color: $main-green;
+            font-size: 1.5rem;
+            line-height: 1;
+            position: absolute;
+            bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .epo-projects-cont {
+        padding: 1rem 10rem 1rem 3rem !important;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .epo-projects-cont {
+        padding: 1rem 20rem 1rem 3rem !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .epo-project {
+        &__data {
+            position: initial;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .epo-project {
+        &__desc {
+            &--title {
+                line-height: 1;
+            }
+
+            &--location {
+                position: initial;
+                padding-bottom: 1rem;
+            }
+        }
+        &__data {
+            &--started {
+                position: initial;
+                padding-top: .8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .epo-projects-search {
+        position: initial;
+        margin-bottom: 2rem;
+    }
+
+    .epo-project {
+        &__desc {
+            padding: 1rem;
+        }
+        &__data {
+            padding: 1rem;
+        }
+    }
+}
