@@ -42,19 +42,23 @@
         @extend .epo-btn;
     }
     &__map {
-        background-image: url("../../images/map-bg.png");
+        background-image: url("../../images/projects-search-map.jpg");
+        display: block;
         background-color: #092751;
         width: 100%;
         height: 200px;
         margin-top: 1rem;
         text-align: center;
-        padding: 2rem;
-        a {
+        padding-top: 4rem;
+        color: rgba(255, 255, 255, 1);
+        font-size: 2rem;
+        text-decoration: underline;
+        &:hover {
+            color: $hover-link !important;
+        }
+        i {
             color: rgba(255, 255, 255, 1);
             font-size: 2rem;
-            &:hover {
-                color: $hover-link;
-            }
         }
     }
 }
@@ -78,9 +82,10 @@
         position: relative;
         &--tag {
             font-size: 14px;
-            font-weight: lighter;
             color: deepskyblue;
             margin-bottom: 0;
+            padding-top: 5px;
+            font-weight: lighter;
         }
         &--title {
             font-size: 1.5rem;
@@ -180,5 +185,11 @@
         &__data {
             padding: 1rem;
         }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .epo-projects-cont {
+        padding: 1rem 2rem !important;
     }
 }
